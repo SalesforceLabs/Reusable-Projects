@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Inbound</name>
+        <label>Set Inbound</label>
+        <locationX>327</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>Inbound_Task.Dependencies__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Found_Task.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Inbound</targetReference>
+        </connector>
+    </assignments>
+    <interviewLabel>Join Dependencies {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Join Dependent Tasks</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Dependency</name>
+        <label>Get Dependency</label>
+        <locationX>188</locationX>
+        <locationY>50</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Inbound</targetReference>
+        </connector>
+        <filters>
+            <field>Due_Date__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Inbound_Task.Dependent_Task_Due__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Inbound_Task.Dependent_Task_Name__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ProjectId__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Inbound_Task.ProjectId__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Inbound_Task.Dependent_Task_Start__c</elementReference>
+            </value>
+        </filters>
+        <object>Milestone1_Task__c</object>
+        <outputReference>Found_Task</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Inbound</name>
+        <label>Update Inbound</label>
+        <locationX>463</locationX>
+        <locationY>50</locationY>
+        <inputReference>Inbound_Task</inputReference>
+    </recordUpdates>
+    <startElementReference>Get_Dependency</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>Found_Task</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Milestone1_Task__c</objectType>
+    </variables>
+    <variables>
+        <name>Inbound_Task</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Milestone1_Task__c</objectType>
+    </variables>
+</Flow>
+
+
+<!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ -->

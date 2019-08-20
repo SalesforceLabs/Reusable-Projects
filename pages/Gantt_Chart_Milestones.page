@@ -1,0 +1,13 @@
+<apex:page standardController="Milestone1_Project__c" extensions="GanttChartHelper" sidebar="false">
+
+    <title>Milestone Gantt Chart</title>
+    
+    <c:GanttChart target="{!myId}"/> 
+</apex:page>
+
+<!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ -->
