@@ -26,6 +26,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Milestone1_Project__c.Project_stage__c</groupingColumn>
+                <groupingSortProperties/>
                 <header>Projects by Stage</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>X07_Project_Reports/Projects_by_Stage</report>
@@ -56,6 +57,7 @@
                 <expandOthers>false</expandOthers>
                 <groupingColumn>CUST_OWNER_NAME</groupingColumn>
                 <groupingColumn>Milestone1_Project__c.Status__c</groupingColumn>
+                <groupingSortProperties/>
                 <header>Project Status by Owner</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>X07_Project_Reports/Project_Status_by_Owner</report>
@@ -85,6 +87,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>Milestone1_Project__c$Owner</groupingColumn>
+                <groupingSortProperties/>
                 <header>Projects Overdue Milestones by Owner</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
@@ -122,6 +125,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>CUST_NAME</groupingColumn>
+                <groupingSortProperties/>
                 <header>Project Expenses Incurred vs. Budgeted</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>

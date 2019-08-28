@@ -4,11 +4,3 @@
     <description>This is a generic template for Apex Component.  With this template, you may adjust the default elements and values and add new elements and values.</description>
     <label>MIlestone1_Calendar_Full</label>
 </ApexComponent>
-
-
-<!--
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- -->

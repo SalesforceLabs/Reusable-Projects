@@ -53,9 +53,4 @@ public with sharing class Milestone1_Time_Trigger_Utility {
             System.assertEquals(Date.today(),rec.Date__c);
         }
     }
-}/*
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- */
+}

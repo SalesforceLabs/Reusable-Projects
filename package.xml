@@ -261,16 +261,8 @@
         <members>Milestone1_Time__c.ImportID__c</members>
         <members>Milestone1_Time__c.Incurred_By__c</members>
         <members>Milestone1_Time__c.Project_Task__c</members>
-        <members>Opportunity.Clone_from_Project2__c</members>
         <members>Opportunity.Clone_from_Project__c</members>
         <members>Opportunity.Project_Kickoff_Date__c</members>
-        <members>TM_Project__c.Account__c</members>
-        <members>TM_Project__c.Deadline__c</members>
-        <members>TM_Project__c.Description__c</members>
-        <members>TM_Project__c.Kickoff__c</members>
-        <members>TM_Project__c.Project_Status__c</members>
-        <members>TM_Project__c.Quip_Project_Plan__c</members>
-        <members>TM_Project__c.Status__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -281,7 +273,6 @@
         <members>Milestone1_Settings__c</members>
         <members>Milestone1_Task__c</members>
         <members>Milestone1_Time__c</members>
-        <members>TM_Project__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -329,7 +320,6 @@
         <members>Milestone1_Project__c-Project Layout</members>
         <members>Milestone1_Task__c-Project Task Layout</members>
         <members>Milestone1_Time__c-Project Time Layout</members>
-        <members>TM_Project__c-Project Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -345,7 +335,6 @@
         <members>Milestone1_Task__c.Active_Tasks</members>
         <members>Milestone1_Task__c.All</members>
         <members>Milestone1_Time__c.All</members>
-        <members>TM_Project__c.All</members>
         <name>ListView</name>
     </types>
     <types>
@@ -396,13 +385,5 @@
         <members>Milestone1_Task__c.Move_to_New_Milestone</members>
         <name>WebLink</name>
     </types>
-    <version>45.0</version>
+    <version>46.0</version>
 </Package>
-
-
-<!--
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- -->

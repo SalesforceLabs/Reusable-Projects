@@ -68,9 +68,4 @@ public with sharing class Milestone1_General_Utility
         String nameString = Milestone1_General_Utility.processTaskName(example);
         system.AssertEquals('NEW DESCRIPTION 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ THIS IS LONG...',nameString);
     } 
-}/*
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- */
+}

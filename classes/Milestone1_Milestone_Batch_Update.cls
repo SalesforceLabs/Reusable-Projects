@@ -86,9 +86,4 @@ global with sharing class Milestone1_Milestone_Batch_Update implements Database.
 		 
 		System.AssertEquals( 200, idSet.size() );
 	}
-}/*
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- */
+}

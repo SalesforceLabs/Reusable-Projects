@@ -6,11 +6,3 @@
     <description>This page is used by the custom Gantt charts on the Projects object page layout.  Added in April 2016.</description>
     <label>Gantt_Chart_Milestones</label>
 </ApexPage>
-
-
-<!--
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- -->

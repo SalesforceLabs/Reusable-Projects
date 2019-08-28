@@ -52,9 +52,4 @@ public with sharing class Milestone1_Constants {
     
     
     static public List<String> XML_OBJECT_PROCESS_ORDER = new List<String>{OBJ_NAME_MILESTONE,OBJ_NAME_LOG};
-}/*
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- */
+}

@@ -137,9 +137,4 @@ public with sharing class GanttChartController {
     private String escapeDoubleQuotes(String word){
       return word.replaceAll(REGEXP_QUOTES,'\\\\"');
     }
-}/*
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- */
+}

@@ -4,11 +4,3 @@
     <description>This component is used by the custom Gantt charts on the Projects and Milestones object page layouts.  Added in April 2016.</description>
     <label>GanttChart</label>
 </ApexComponent>
-
-
-<!--
- * Copyright (c) 2018, salesforce.com, inc.
- * All rights reserved.
- * SPDX-License-Identifier: BSD-3-Clause
- * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
- -->
